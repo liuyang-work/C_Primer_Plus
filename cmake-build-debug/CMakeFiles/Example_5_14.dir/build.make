@@ -56,27 +56,27 @@ include CMakeFiles/Example_5_14.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Example_5_14.dir/flags.make
 
-CMakeFiles/Example_5_14.dir/C_Program/C_Primer_Plus/第五章/Example_5_14.c.obj: CMakeFiles/Example_5_14.dir/flags.make
-CMakeFiles/Example_5_14.dir/C_Program/C_Primer_Plus/第五章/Example_5_14.c.obj: ../C_Program/C_Primer_Plus/第五章/Example_5_14.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\C-Basic-Code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Example_5_14.dir/C_Program/C_Primer_Plus/第五章/Example_5_14.c.obj"
-	D:\EXsoftware\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Example_5_14.dir\C_Program\C_Primer_Plus\第五章\Example_5_14.c.obj   -c D:\CProgram\C-Basic-Code\C_Program\C_Primer_Plus\第五章\Example_5_14.c
+CMakeFiles/Example_5_14.dir/C_Primer_Plus/Unit_5/Example_5_14.c.obj: CMakeFiles/Example_5_14.dir/flags.make
+CMakeFiles/Example_5_14.dir/C_Primer_Plus/Unit_5/Example_5_14.c.obj: ../C_Primer_Plus/Unit_5/Example_5_14.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\CProgram\C-Basic-Code\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Example_5_14.dir/C_Primer_Plus/Unit_5/Example_5_14.c.obj"
+	D:\EXsoftware\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Example_5_14.dir\C_Primer_Plus\Unit_5\Example_5_14.c.obj   -c D:\CProgram\C-Basic-Code\C_Primer_Plus\Unit_5\Example_5_14.c
 
-CMakeFiles/Example_5_14.dir/C_Program/C_Primer_Plus/第五章/Example_5_14.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Example_5_14.dir/C_Program/C_Primer_Plus/第五章/Example_5_14.c.i"
-	D:\EXsoftware\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\CProgram\C-Basic-Code\C_Program\C_Primer_Plus\第五章\Example_5_14.c > CMakeFiles\Example_5_14.dir\C_Program\C_Primer_Plus\第五章\Example_5_14.c.i
+CMakeFiles/Example_5_14.dir/C_Primer_Plus/Unit_5/Example_5_14.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Example_5_14.dir/C_Primer_Plus/Unit_5/Example_5_14.c.i"
+	D:\EXsoftware\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\CProgram\C-Basic-Code\C_Primer_Plus\Unit_5\Example_5_14.c > CMakeFiles\Example_5_14.dir\C_Primer_Plus\Unit_5\Example_5_14.c.i
 
-CMakeFiles/Example_5_14.dir/C_Program/C_Primer_Plus/第五章/Example_5_14.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Example_5_14.dir/C_Program/C_Primer_Plus/第五章/Example_5_14.c.s"
-	D:\EXsoftware\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\CProgram\C-Basic-Code\C_Program\C_Primer_Plus\第五章\Example_5_14.c -o CMakeFiles\Example_5_14.dir\C_Program\C_Primer_Plus\第五章\Example_5_14.c.s
+CMakeFiles/Example_5_14.dir/C_Primer_Plus/Unit_5/Example_5_14.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Example_5_14.dir/C_Primer_Plus/Unit_5/Example_5_14.c.s"
+	D:\EXsoftware\Dev-Cpp\MinGW64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\CProgram\C-Basic-Code\C_Primer_Plus\Unit_5\Example_5_14.c -o CMakeFiles\Example_5_14.dir\C_Primer_Plus\Unit_5\Example_5_14.c.s
 
 # Object files for target Example_5_14
 Example_5_14_OBJECTS = \
-"CMakeFiles/Example_5_14.dir/C_Program/C_Primer_Plus/第五章/Example_5_14.c.obj"
+"CMakeFiles/Example_5_14.dir/C_Primer_Plus/Unit_5/Example_5_14.c.obj"
 
 # External object files for target Example_5_14
 Example_5_14_EXTERNAL_OBJECTS =
 
-Example_5_14.exe: CMakeFiles/Example_5_14.dir/C_Program/C_Primer_Plus/第五章/Example_5_14.c.obj
+Example_5_14.exe: CMakeFiles/Example_5_14.dir/C_Primer_Plus/Unit_5/Example_5_14.c.obj
 Example_5_14.exe: CMakeFiles/Example_5_14.dir/build.make
 Example_5_14.exe: CMakeFiles/Example_5_14.dir/linklibs.rsp
 Example_5_14.exe: CMakeFiles/Example_5_14.dir/objects1.rsp

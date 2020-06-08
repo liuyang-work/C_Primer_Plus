@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/CProgram/C-Basic-Code/C_Primer_Plus/Unit_13/Example_13_6.c
+stdio.h
+D:/CProgram/C-Basic-Code/C_Primer_Plus/Unit_13/stdio.h
+stdlib.h
+D:/CProgram/C-Basic-Code/C_Primer_Plus/Unit_13/stdlib.h
+

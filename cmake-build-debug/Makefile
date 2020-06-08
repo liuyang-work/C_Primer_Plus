@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = D:\CProgram\C-Basic-Code\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\EXsoftware\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -76,6 +65,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"D:\EXsoftware\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,6 +110,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Example_16_12
+
+# Build rule for target.
+Example_16_12: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Example_16_12
+.PHONY : Example_16_12
+
+# fast build rule for target.
+Example_16_12/fast:
+	$(MAKE) -f CMakeFiles\Example_16_12.dir\build.make CMakeFiles/Example_16_12.dir/build
+.PHONY : Example_16_12/fast
+
+#=============================================================================
+# Target rules for targets named Example_16_9
+
+# Build rule for target.
+Example_16_9: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Example_16_9
+.PHONY : Example_16_9
+
+# fast build rule for target.
+Example_16_9/fast:
+	$(MAKE) -f CMakeFiles\Example_16_9.dir\build.make CMakeFiles/Example_16_9.dir/build
+.PHONY : Example_16_9/fast
+
+#=============================================================================
 # Target rules for targets named C_Basic_Code
 
 # Build rule for target.
@@ -123,44 +149,538 @@ C_Basic_Code/fast:
 .PHONY : C_Basic_Code/fast
 
 #=============================================================================
-# Target rules for targets named Example_5_13
+# Target rules for targets named Example_16_7
 
 # Build rule for target.
-Example_5_13: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Example_5_13
-.PHONY : Example_5_13
+Example_16_7: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Example_16_7
+.PHONY : Example_16_7
 
 # fast build rule for target.
-Example_5_13/fast:
-	$(MAKE) -f CMakeFiles\Example_5_13.dir\build.make CMakeFiles/Example_5_13.dir/build
-.PHONY : Example_5_13/fast
+Example_16_7/fast:
+	$(MAKE) -f CMakeFiles\Example_16_7.dir\build.make CMakeFiles/Example_16_7.dir/build
+.PHONY : Example_16_7/fast
 
-C_Primer_Plus/Unit_5/Example_5_13.obj: C_Primer_Plus/Unit_5/Example_5_13.c.obj
+#=============================================================================
+# Target rules for targets named Example_16_14
 
-.PHONY : C_Primer_Plus/Unit_5/Example_5_13.obj
+# Build rule for target.
+Example_16_14: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Example_16_14
+.PHONY : Example_16_14
+
+# fast build rule for target.
+Example_16_14/fast:
+	$(MAKE) -f CMakeFiles\Example_16_14.dir\build.make CMakeFiles/Example_16_14.dir/build
+.PHONY : Example_16_14/fast
+
+#=============================================================================
+# Target rules for targets named Example_16_13
+
+# Build rule for target.
+Example_16_13: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Example_16_13
+.PHONY : Example_16_13
+
+# fast build rule for target.
+Example_16_13/fast:
+	$(MAKE) -f CMakeFiles\Example_16_13.dir\build.make CMakeFiles/Example_16_13.dir/build
+.PHONY : Example_16_13/fast
+
+#=============================================================================
+# Target rules for targets named Example_16_8
+
+# Build rule for target.
+Example_16_8: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Example_16_8
+.PHONY : Example_16_8
+
+# fast build rule for target.
+Example_16_8/fast:
+	$(MAKE) -f CMakeFiles\Example_16_8.dir\build.make CMakeFiles/Example_16_8.dir/build
+.PHONY : Example_16_8/fast
+
+#=============================================================================
+# Target rules for targets named Example_16_11
+
+# Build rule for target.
+Example_16_11: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Example_16_11
+.PHONY : Example_16_11
+
+# fast build rule for target.
+Example_16_11/fast:
+	$(MAKE) -f CMakeFiles\Example_16_11.dir\build.make CMakeFiles/Example_16_11.dir/build
+.PHONY : Example_16_11/fast
+
+#=============================================================================
+# Target rules for targets named Example_16_15
+
+# Build rule for target.
+Example_16_15: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Example_16_15
+.PHONY : Example_16_15
+
+# fast build rule for target.
+Example_16_15/fast:
+	$(MAKE) -f CMakeFiles\Example_16_15.dir\build.make CMakeFiles/Example_16_15.dir/build
+.PHONY : Example_16_15/fast
+
+#=============================================================================
+# Target rules for targets named Example_16_16
+
+# Build rule for target.
+Example_16_16: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Example_16_16
+.PHONY : Example_16_16
+
+# fast build rule for target.
+Example_16_16/fast:
+	$(MAKE) -f CMakeFiles\Example_16_16.dir\build.make CMakeFiles/Example_16_16.dir/build
+.PHONY : Example_16_16/fast
+
+#=============================================================================
+# Target rules for targets named Example_16_17
+
+# Build rule for target.
+Example_16_17: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Example_16_17
+.PHONY : Example_16_17
+
+# fast build rule for target.
+Example_16_17/fast:
+	$(MAKE) -f CMakeFiles\Example_16_17.dir\build.make CMakeFiles/Example_16_17.dir/build
+.PHONY : Example_16_17/fast
+
+#=============================================================================
+# Target rules for targets named Example_16_18
+
+# Build rule for target.
+Example_16_18: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Example_16_18
+.PHONY : Example_16_18
+
+# fast build rule for target.
+Example_16_18/fast:
+	$(MAKE) -f CMakeFiles\Example_16_18.dir\build.make CMakeFiles/Example_16_18.dir/build
+.PHONY : Example_16_18/fast
+
+#=============================================================================
+# Target rules for targets named Example_16_19
+
+# Build rule for target.
+Example_16_19: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Example_16_19
+.PHONY : Example_16_19
+
+# fast build rule for target.
+Example_16_19/fast:
+	$(MAKE) -f CMakeFiles\Example_16_19.dir\build.make CMakeFiles/Example_16_19.dir/build
+.PHONY : Example_16_19/fast
+
+#=============================================================================
+# Target rules for targets named Example_16_20
+
+# Build rule for target.
+Example_16_20: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Example_16_20
+.PHONY : Example_16_20
+
+# fast build rule for target.
+Example_16_20/fast:
+	$(MAKE) -f CMakeFiles\Example_16_20.dir\build.make CMakeFiles/Example_16_20.dir/build
+.PHONY : Example_16_20/fast
+
+#=============================================================================
+# Target rules for targets named Example_16_21
+
+# Build rule for target.
+Example_16_21: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Example_16_21
+.PHONY : Example_16_21
+
+# fast build rule for target.
+Example_16_21/fast:
+	$(MAKE) -f CMakeFiles\Example_16_21.dir\build.make CMakeFiles/Example_16_21.dir/build
+.PHONY : Example_16_21/fast
+
+C_Primer_Plus/Unit_16/Example_16_11.obj: C_Primer_Plus/Unit_16/Example_16_11.c.obj
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_11.obj
 
 # target to build an object file
-C_Primer_Plus/Unit_5/Example_5_13.c.obj:
-	$(MAKE) -f CMakeFiles\Example_5_13.dir\build.make CMakeFiles/Example_5_13.dir/C_Primer_Plus/Unit_5/Example_5_13.c.obj
-.PHONY : C_Primer_Plus/Unit_5/Example_5_13.c.obj
+C_Primer_Plus/Unit_16/Example_16_11.c.obj:
+	$(MAKE) -f CMakeFiles\Example_16_11.dir\build.make CMakeFiles/Example_16_11.dir/C_Primer_Plus/Unit_16/Example_16_11.c.obj
+.PHONY : C_Primer_Plus/Unit_16/Example_16_11.c.obj
 
-C_Primer_Plus/Unit_5/Example_5_13.i: C_Primer_Plus/Unit_5/Example_5_13.c.i
+C_Primer_Plus/Unit_16/Example_16_11.i: C_Primer_Plus/Unit_16/Example_16_11.c.i
 
-.PHONY : C_Primer_Plus/Unit_5/Example_5_13.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_11.i
 
 # target to preprocess a source file
-C_Primer_Plus/Unit_5/Example_5_13.c.i:
-	$(MAKE) -f CMakeFiles\Example_5_13.dir\build.make CMakeFiles/Example_5_13.dir/C_Primer_Plus/Unit_5/Example_5_13.c.i
-.PHONY : C_Primer_Plus/Unit_5/Example_5_13.c.i
+C_Primer_Plus/Unit_16/Example_16_11.c.i:
+	$(MAKE) -f CMakeFiles\Example_16_11.dir\build.make CMakeFiles/Example_16_11.dir/C_Primer_Plus/Unit_16/Example_16_11.c.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_11.c.i
 
-C_Primer_Plus/Unit_5/Example_5_13.s: C_Primer_Plus/Unit_5/Example_5_13.c.s
+C_Primer_Plus/Unit_16/Example_16_11.s: C_Primer_Plus/Unit_16/Example_16_11.c.s
 
-.PHONY : C_Primer_Plus/Unit_5/Example_5_13.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_11.s
 
 # target to generate assembly for a file
-C_Primer_Plus/Unit_5/Example_5_13.c.s:
-	$(MAKE) -f CMakeFiles\Example_5_13.dir\build.make CMakeFiles/Example_5_13.dir/C_Primer_Plus/Unit_5/Example_5_13.c.s
-.PHONY : C_Primer_Plus/Unit_5/Example_5_13.c.s
+C_Primer_Plus/Unit_16/Example_16_11.c.s:
+	$(MAKE) -f CMakeFiles\Example_16_11.dir\build.make CMakeFiles/Example_16_11.dir/C_Primer_Plus/Unit_16/Example_16_11.c.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_11.c.s
+
+C_Primer_Plus/Unit_16/Example_16_12.obj: C_Primer_Plus/Unit_16/Example_16_12.c.obj
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_12.obj
+
+# target to build an object file
+C_Primer_Plus/Unit_16/Example_16_12.c.obj:
+	$(MAKE) -f CMakeFiles\Example_16_12.dir\build.make CMakeFiles/Example_16_12.dir/C_Primer_Plus/Unit_16/Example_16_12.c.obj
+.PHONY : C_Primer_Plus/Unit_16/Example_16_12.c.obj
+
+C_Primer_Plus/Unit_16/Example_16_12.i: C_Primer_Plus/Unit_16/Example_16_12.c.i
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_12.i
+
+# target to preprocess a source file
+C_Primer_Plus/Unit_16/Example_16_12.c.i:
+	$(MAKE) -f CMakeFiles\Example_16_12.dir\build.make CMakeFiles/Example_16_12.dir/C_Primer_Plus/Unit_16/Example_16_12.c.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_12.c.i
+
+C_Primer_Plus/Unit_16/Example_16_12.s: C_Primer_Plus/Unit_16/Example_16_12.c.s
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_12.s
+
+# target to generate assembly for a file
+C_Primer_Plus/Unit_16/Example_16_12.c.s:
+	$(MAKE) -f CMakeFiles\Example_16_12.dir\build.make CMakeFiles/Example_16_12.dir/C_Primer_Plus/Unit_16/Example_16_12.c.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_12.c.s
+
+C_Primer_Plus/Unit_16/Example_16_13.obj: C_Primer_Plus/Unit_16/Example_16_13.c.obj
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_13.obj
+
+# target to build an object file
+C_Primer_Plus/Unit_16/Example_16_13.c.obj:
+	$(MAKE) -f CMakeFiles\Example_16_13.dir\build.make CMakeFiles/Example_16_13.dir/C_Primer_Plus/Unit_16/Example_16_13.c.obj
+.PHONY : C_Primer_Plus/Unit_16/Example_16_13.c.obj
+
+C_Primer_Plus/Unit_16/Example_16_13.i: C_Primer_Plus/Unit_16/Example_16_13.c.i
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_13.i
+
+# target to preprocess a source file
+C_Primer_Plus/Unit_16/Example_16_13.c.i:
+	$(MAKE) -f CMakeFiles\Example_16_13.dir\build.make CMakeFiles/Example_16_13.dir/C_Primer_Plus/Unit_16/Example_16_13.c.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_13.c.i
+
+C_Primer_Plus/Unit_16/Example_16_13.s: C_Primer_Plus/Unit_16/Example_16_13.c.s
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_13.s
+
+# target to generate assembly for a file
+C_Primer_Plus/Unit_16/Example_16_13.c.s:
+	$(MAKE) -f CMakeFiles\Example_16_13.dir\build.make CMakeFiles/Example_16_13.dir/C_Primer_Plus/Unit_16/Example_16_13.c.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_13.c.s
+
+C_Primer_Plus/Unit_16/Example_16_14.obj: C_Primer_Plus/Unit_16/Example_16_14.c.obj
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_14.obj
+
+# target to build an object file
+C_Primer_Plus/Unit_16/Example_16_14.c.obj:
+	$(MAKE) -f CMakeFiles\Example_16_14.dir\build.make CMakeFiles/Example_16_14.dir/C_Primer_Plus/Unit_16/Example_16_14.c.obj
+.PHONY : C_Primer_Plus/Unit_16/Example_16_14.c.obj
+
+C_Primer_Plus/Unit_16/Example_16_14.i: C_Primer_Plus/Unit_16/Example_16_14.c.i
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_14.i
+
+# target to preprocess a source file
+C_Primer_Plus/Unit_16/Example_16_14.c.i:
+	$(MAKE) -f CMakeFiles\Example_16_14.dir\build.make CMakeFiles/Example_16_14.dir/C_Primer_Plus/Unit_16/Example_16_14.c.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_14.c.i
+
+C_Primer_Plus/Unit_16/Example_16_14.s: C_Primer_Plus/Unit_16/Example_16_14.c.s
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_14.s
+
+# target to generate assembly for a file
+C_Primer_Plus/Unit_16/Example_16_14.c.s:
+	$(MAKE) -f CMakeFiles\Example_16_14.dir\build.make CMakeFiles/Example_16_14.dir/C_Primer_Plus/Unit_16/Example_16_14.c.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_14.c.s
+
+C_Primer_Plus/Unit_16/Example_16_15.obj: C_Primer_Plus/Unit_16/Example_16_15.c.obj
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_15.obj
+
+# target to build an object file
+C_Primer_Plus/Unit_16/Example_16_15.c.obj:
+	$(MAKE) -f CMakeFiles\Example_16_15.dir\build.make CMakeFiles/Example_16_15.dir/C_Primer_Plus/Unit_16/Example_16_15.c.obj
+.PHONY : C_Primer_Plus/Unit_16/Example_16_15.c.obj
+
+C_Primer_Plus/Unit_16/Example_16_15.i: C_Primer_Plus/Unit_16/Example_16_15.c.i
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_15.i
+
+# target to preprocess a source file
+C_Primer_Plus/Unit_16/Example_16_15.c.i:
+	$(MAKE) -f CMakeFiles\Example_16_15.dir\build.make CMakeFiles/Example_16_15.dir/C_Primer_Plus/Unit_16/Example_16_15.c.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_15.c.i
+
+C_Primer_Plus/Unit_16/Example_16_15.s: C_Primer_Plus/Unit_16/Example_16_15.c.s
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_15.s
+
+# target to generate assembly for a file
+C_Primer_Plus/Unit_16/Example_16_15.c.s:
+	$(MAKE) -f CMakeFiles\Example_16_15.dir\build.make CMakeFiles/Example_16_15.dir/C_Primer_Plus/Unit_16/Example_16_15.c.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_15.c.s
+
+C_Primer_Plus/Unit_16/Example_16_16.obj: C_Primer_Plus/Unit_16/Example_16_16.c.obj
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_16.obj
+
+# target to build an object file
+C_Primer_Plus/Unit_16/Example_16_16.c.obj:
+	$(MAKE) -f CMakeFiles\Example_16_16.dir\build.make CMakeFiles/Example_16_16.dir/C_Primer_Plus/Unit_16/Example_16_16.c.obj
+.PHONY : C_Primer_Plus/Unit_16/Example_16_16.c.obj
+
+C_Primer_Plus/Unit_16/Example_16_16.i: C_Primer_Plus/Unit_16/Example_16_16.c.i
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_16.i
+
+# target to preprocess a source file
+C_Primer_Plus/Unit_16/Example_16_16.c.i:
+	$(MAKE) -f CMakeFiles\Example_16_16.dir\build.make CMakeFiles/Example_16_16.dir/C_Primer_Plus/Unit_16/Example_16_16.c.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_16.c.i
+
+C_Primer_Plus/Unit_16/Example_16_16.s: C_Primer_Plus/Unit_16/Example_16_16.c.s
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_16.s
+
+# target to generate assembly for a file
+C_Primer_Plus/Unit_16/Example_16_16.c.s:
+	$(MAKE) -f CMakeFiles\Example_16_16.dir\build.make CMakeFiles/Example_16_16.dir/C_Primer_Plus/Unit_16/Example_16_16.c.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_16.c.s
+
+C_Primer_Plus/Unit_16/Example_16_17.obj: C_Primer_Plus/Unit_16/Example_16_17.c.obj
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_17.obj
+
+# target to build an object file
+C_Primer_Plus/Unit_16/Example_16_17.c.obj:
+	$(MAKE) -f CMakeFiles\Example_16_17.dir\build.make CMakeFiles/Example_16_17.dir/C_Primer_Plus/Unit_16/Example_16_17.c.obj
+.PHONY : C_Primer_Plus/Unit_16/Example_16_17.c.obj
+
+C_Primer_Plus/Unit_16/Example_16_17.i: C_Primer_Plus/Unit_16/Example_16_17.c.i
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_17.i
+
+# target to preprocess a source file
+C_Primer_Plus/Unit_16/Example_16_17.c.i:
+	$(MAKE) -f CMakeFiles\Example_16_17.dir\build.make CMakeFiles/Example_16_17.dir/C_Primer_Plus/Unit_16/Example_16_17.c.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_17.c.i
+
+C_Primer_Plus/Unit_16/Example_16_17.s: C_Primer_Plus/Unit_16/Example_16_17.c.s
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_17.s
+
+# target to generate assembly for a file
+C_Primer_Plus/Unit_16/Example_16_17.c.s:
+	$(MAKE) -f CMakeFiles\Example_16_17.dir\build.make CMakeFiles/Example_16_17.dir/C_Primer_Plus/Unit_16/Example_16_17.c.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_17.c.s
+
+C_Primer_Plus/Unit_16/Example_16_18.obj: C_Primer_Plus/Unit_16/Example_16_18.c.obj
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_18.obj
+
+# target to build an object file
+C_Primer_Plus/Unit_16/Example_16_18.c.obj:
+	$(MAKE) -f CMakeFiles\Example_16_18.dir\build.make CMakeFiles/Example_16_18.dir/C_Primer_Plus/Unit_16/Example_16_18.c.obj
+.PHONY : C_Primer_Plus/Unit_16/Example_16_18.c.obj
+
+C_Primer_Plus/Unit_16/Example_16_18.i: C_Primer_Plus/Unit_16/Example_16_18.c.i
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_18.i
+
+# target to preprocess a source file
+C_Primer_Plus/Unit_16/Example_16_18.c.i:
+	$(MAKE) -f CMakeFiles\Example_16_18.dir\build.make CMakeFiles/Example_16_18.dir/C_Primer_Plus/Unit_16/Example_16_18.c.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_18.c.i
+
+C_Primer_Plus/Unit_16/Example_16_18.s: C_Primer_Plus/Unit_16/Example_16_18.c.s
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_18.s
+
+# target to generate assembly for a file
+C_Primer_Plus/Unit_16/Example_16_18.c.s:
+	$(MAKE) -f CMakeFiles\Example_16_18.dir\build.make CMakeFiles/Example_16_18.dir/C_Primer_Plus/Unit_16/Example_16_18.c.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_18.c.s
+
+C_Primer_Plus/Unit_16/Example_16_19.obj: C_Primer_Plus/Unit_16/Example_16_19.c.obj
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_19.obj
+
+# target to build an object file
+C_Primer_Plus/Unit_16/Example_16_19.c.obj:
+	$(MAKE) -f CMakeFiles\Example_16_19.dir\build.make CMakeFiles/Example_16_19.dir/C_Primer_Plus/Unit_16/Example_16_19.c.obj
+.PHONY : C_Primer_Plus/Unit_16/Example_16_19.c.obj
+
+C_Primer_Plus/Unit_16/Example_16_19.i: C_Primer_Plus/Unit_16/Example_16_19.c.i
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_19.i
+
+# target to preprocess a source file
+C_Primer_Plus/Unit_16/Example_16_19.c.i:
+	$(MAKE) -f CMakeFiles\Example_16_19.dir\build.make CMakeFiles/Example_16_19.dir/C_Primer_Plus/Unit_16/Example_16_19.c.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_19.c.i
+
+C_Primer_Plus/Unit_16/Example_16_19.s: C_Primer_Plus/Unit_16/Example_16_19.c.s
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_19.s
+
+# target to generate assembly for a file
+C_Primer_Plus/Unit_16/Example_16_19.c.s:
+	$(MAKE) -f CMakeFiles\Example_16_19.dir\build.make CMakeFiles/Example_16_19.dir/C_Primer_Plus/Unit_16/Example_16_19.c.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_19.c.s
+
+C_Primer_Plus/Unit_16/Example_16_20.obj: C_Primer_Plus/Unit_16/Example_16_20.c.obj
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_20.obj
+
+# target to build an object file
+C_Primer_Plus/Unit_16/Example_16_20.c.obj:
+	$(MAKE) -f CMakeFiles\Example_16_20.dir\build.make CMakeFiles/Example_16_20.dir/C_Primer_Plus/Unit_16/Example_16_20.c.obj
+.PHONY : C_Primer_Plus/Unit_16/Example_16_20.c.obj
+
+C_Primer_Plus/Unit_16/Example_16_20.i: C_Primer_Plus/Unit_16/Example_16_20.c.i
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_20.i
+
+# target to preprocess a source file
+C_Primer_Plus/Unit_16/Example_16_20.c.i:
+	$(MAKE) -f CMakeFiles\Example_16_20.dir\build.make CMakeFiles/Example_16_20.dir/C_Primer_Plus/Unit_16/Example_16_20.c.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_20.c.i
+
+C_Primer_Plus/Unit_16/Example_16_20.s: C_Primer_Plus/Unit_16/Example_16_20.c.s
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_20.s
+
+# target to generate assembly for a file
+C_Primer_Plus/Unit_16/Example_16_20.c.s:
+	$(MAKE) -f CMakeFiles\Example_16_20.dir\build.make CMakeFiles/Example_16_20.dir/C_Primer_Plus/Unit_16/Example_16_20.c.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_20.c.s
+
+C_Primer_Plus/Unit_16/Example_16_21.obj: C_Primer_Plus/Unit_16/Example_16_21.c.obj
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_21.obj
+
+# target to build an object file
+C_Primer_Plus/Unit_16/Example_16_21.c.obj:
+	$(MAKE) -f CMakeFiles\Example_16_21.dir\build.make CMakeFiles/Example_16_21.dir/C_Primer_Plus/Unit_16/Example_16_21.c.obj
+.PHONY : C_Primer_Plus/Unit_16/Example_16_21.c.obj
+
+C_Primer_Plus/Unit_16/Example_16_21.i: C_Primer_Plus/Unit_16/Example_16_21.c.i
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_21.i
+
+# target to preprocess a source file
+C_Primer_Plus/Unit_16/Example_16_21.c.i:
+	$(MAKE) -f CMakeFiles\Example_16_21.dir\build.make CMakeFiles/Example_16_21.dir/C_Primer_Plus/Unit_16/Example_16_21.c.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_21.c.i
+
+C_Primer_Plus/Unit_16/Example_16_21.s: C_Primer_Plus/Unit_16/Example_16_21.c.s
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_21.s
+
+# target to generate assembly for a file
+C_Primer_Plus/Unit_16/Example_16_21.c.s:
+	$(MAKE) -f CMakeFiles\Example_16_21.dir\build.make CMakeFiles/Example_16_21.dir/C_Primer_Plus/Unit_16/Example_16_21.c.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_21.c.s
+
+C_Primer_Plus/Unit_16/Example_16_7.obj: C_Primer_Plus/Unit_16/Example_16_7.c.obj
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_7.obj
+
+# target to build an object file
+C_Primer_Plus/Unit_16/Example_16_7.c.obj:
+	$(MAKE) -f CMakeFiles\Example_16_7.dir\build.make CMakeFiles/Example_16_7.dir/C_Primer_Plus/Unit_16/Example_16_7.c.obj
+.PHONY : C_Primer_Plus/Unit_16/Example_16_7.c.obj
+
+C_Primer_Plus/Unit_16/Example_16_7.i: C_Primer_Plus/Unit_16/Example_16_7.c.i
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_7.i
+
+# target to preprocess a source file
+C_Primer_Plus/Unit_16/Example_16_7.c.i:
+	$(MAKE) -f CMakeFiles\Example_16_7.dir\build.make CMakeFiles/Example_16_7.dir/C_Primer_Plus/Unit_16/Example_16_7.c.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_7.c.i
+
+C_Primer_Plus/Unit_16/Example_16_7.s: C_Primer_Plus/Unit_16/Example_16_7.c.s
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_7.s
+
+# target to generate assembly for a file
+C_Primer_Plus/Unit_16/Example_16_7.c.s:
+	$(MAKE) -f CMakeFiles\Example_16_7.dir\build.make CMakeFiles/Example_16_7.dir/C_Primer_Plus/Unit_16/Example_16_7.c.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_7.c.s
+
+C_Primer_Plus/Unit_16/Example_16_8.obj: C_Primer_Plus/Unit_16/Example_16_8.c.obj
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_8.obj
+
+# target to build an object file
+C_Primer_Plus/Unit_16/Example_16_8.c.obj:
+	$(MAKE) -f CMakeFiles\Example_16_8.dir\build.make CMakeFiles/Example_16_8.dir/C_Primer_Plus/Unit_16/Example_16_8.c.obj
+.PHONY : C_Primer_Plus/Unit_16/Example_16_8.c.obj
+
+C_Primer_Plus/Unit_16/Example_16_8.i: C_Primer_Plus/Unit_16/Example_16_8.c.i
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_8.i
+
+# target to preprocess a source file
+C_Primer_Plus/Unit_16/Example_16_8.c.i:
+	$(MAKE) -f CMakeFiles\Example_16_8.dir\build.make CMakeFiles/Example_16_8.dir/C_Primer_Plus/Unit_16/Example_16_8.c.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_8.c.i
+
+C_Primer_Plus/Unit_16/Example_16_8.s: C_Primer_Plus/Unit_16/Example_16_8.c.s
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_8.s
+
+# target to generate assembly for a file
+C_Primer_Plus/Unit_16/Example_16_8.c.s:
+	$(MAKE) -f CMakeFiles\Example_16_8.dir\build.make CMakeFiles/Example_16_8.dir/C_Primer_Plus/Unit_16/Example_16_8.c.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_8.c.s
+
+C_Primer_Plus/Unit_16/Example_16_9.obj: C_Primer_Plus/Unit_16/Example_16_9.c.obj
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_9.obj
+
+# target to build an object file
+C_Primer_Plus/Unit_16/Example_16_9.c.obj:
+	$(MAKE) -f CMakeFiles\Example_16_9.dir\build.make CMakeFiles/Example_16_9.dir/C_Primer_Plus/Unit_16/Example_16_9.c.obj
+.PHONY : C_Primer_Plus/Unit_16/Example_16_9.c.obj
+
+C_Primer_Plus/Unit_16/Example_16_9.i: C_Primer_Plus/Unit_16/Example_16_9.c.i
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_9.i
+
+# target to preprocess a source file
+C_Primer_Plus/Unit_16/Example_16_9.c.i:
+	$(MAKE) -f CMakeFiles\Example_16_9.dir\build.make CMakeFiles/Example_16_9.dir/C_Primer_Plus/Unit_16/Example_16_9.c.i
+.PHONY : C_Primer_Plus/Unit_16/Example_16_9.c.i
+
+C_Primer_Plus/Unit_16/Example_16_9.s: C_Primer_Plus/Unit_16/Example_16_9.c.s
+
+.PHONY : C_Primer_Plus/Unit_16/Example_16_9.s
+
+# target to generate assembly for a file
+C_Primer_Plus/Unit_16/Example_16_9.c.s:
+	$(MAKE) -f CMakeFiles\Example_16_9.dir\build.make CMakeFiles/Example_16_9.dir/C_Primer_Plus/Unit_16/Example_16_9.c.s
+.PHONY : C_Primer_Plus/Unit_16/Example_16_9.c.s
 
 main.obj: main.c.obj
 
@@ -195,13 +715,65 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
+	@echo ... Example_16_12
+	@echo ... Example_16_9
 	@echo ... C_Basic_Code
-	@echo ... Example_5_13
+	@echo ... Example_16_7
+	@echo ... Example_16_14
+	@echo ... Example_16_13
+	@echo ... Example_16_8
+	@echo ... Example_16_11
 	@echo ... edit_cache
-	@echo ... C_Primer_Plus/Unit_5/Example_5_13.obj
-	@echo ... C_Primer_Plus/Unit_5/Example_5_13.i
-	@echo ... C_Primer_Plus/Unit_5/Example_5_13.s
+	@echo ... Example_16_15
+	@echo ... Example_16_16
+	@echo ... Example_16_17
+	@echo ... Example_16_18
+	@echo ... Example_16_19
+	@echo ... Example_16_20
+	@echo ... Example_16_21
+	@echo ... rebuild_cache
+	@echo ... C_Primer_Plus/Unit_16/Example_16_11.obj
+	@echo ... C_Primer_Plus/Unit_16/Example_16_11.i
+	@echo ... C_Primer_Plus/Unit_16/Example_16_11.s
+	@echo ... C_Primer_Plus/Unit_16/Example_16_12.obj
+	@echo ... C_Primer_Plus/Unit_16/Example_16_12.i
+	@echo ... C_Primer_Plus/Unit_16/Example_16_12.s
+	@echo ... C_Primer_Plus/Unit_16/Example_16_13.obj
+	@echo ... C_Primer_Plus/Unit_16/Example_16_13.i
+	@echo ... C_Primer_Plus/Unit_16/Example_16_13.s
+	@echo ... C_Primer_Plus/Unit_16/Example_16_14.obj
+	@echo ... C_Primer_Plus/Unit_16/Example_16_14.i
+	@echo ... C_Primer_Plus/Unit_16/Example_16_14.s
+	@echo ... C_Primer_Plus/Unit_16/Example_16_15.obj
+	@echo ... C_Primer_Plus/Unit_16/Example_16_15.i
+	@echo ... C_Primer_Plus/Unit_16/Example_16_15.s
+	@echo ... C_Primer_Plus/Unit_16/Example_16_16.obj
+	@echo ... C_Primer_Plus/Unit_16/Example_16_16.i
+	@echo ... C_Primer_Plus/Unit_16/Example_16_16.s
+	@echo ... C_Primer_Plus/Unit_16/Example_16_17.obj
+	@echo ... C_Primer_Plus/Unit_16/Example_16_17.i
+	@echo ... C_Primer_Plus/Unit_16/Example_16_17.s
+	@echo ... C_Primer_Plus/Unit_16/Example_16_18.obj
+	@echo ... C_Primer_Plus/Unit_16/Example_16_18.i
+	@echo ... C_Primer_Plus/Unit_16/Example_16_18.s
+	@echo ... C_Primer_Plus/Unit_16/Example_16_19.obj
+	@echo ... C_Primer_Plus/Unit_16/Example_16_19.i
+	@echo ... C_Primer_Plus/Unit_16/Example_16_19.s
+	@echo ... C_Primer_Plus/Unit_16/Example_16_20.obj
+	@echo ... C_Primer_Plus/Unit_16/Example_16_20.i
+	@echo ... C_Primer_Plus/Unit_16/Example_16_20.s
+	@echo ... C_Primer_Plus/Unit_16/Example_16_21.obj
+	@echo ... C_Primer_Plus/Unit_16/Example_16_21.i
+	@echo ... C_Primer_Plus/Unit_16/Example_16_21.s
+	@echo ... C_Primer_Plus/Unit_16/Example_16_7.obj
+	@echo ... C_Primer_Plus/Unit_16/Example_16_7.i
+	@echo ... C_Primer_Plus/Unit_16/Example_16_7.s
+	@echo ... C_Primer_Plus/Unit_16/Example_16_8.obj
+	@echo ... C_Primer_Plus/Unit_16/Example_16_8.i
+	@echo ... C_Primer_Plus/Unit_16/Example_16_8.s
+	@echo ... C_Primer_Plus/Unit_16/Example_16_9.obj
+	@echo ... C_Primer_Plus/Unit_16/Example_16_9.i
+	@echo ... C_Primer_Plus/Unit_16/Example_16_9.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

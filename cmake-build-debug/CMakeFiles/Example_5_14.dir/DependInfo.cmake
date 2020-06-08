@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "D:/CProgram/C-Basic-Code/C_Program/C_Primer_Plus/第五章/Example_5_14.c" "D:/CProgram/C-Basic-Code/cmake-build-debug/CMakeFiles/Example_5_14.dir/C_Program/C_Primer_Plus/第五章/Example_5_14.c.obj"
+  "D:/CProgram/C-Basic-Code/C_Primer_Plus/Unit_5/Example_5_14.c" "D:/CProgram/C-Basic-Code/cmake-build-debug/CMakeFiles/Example_5_14.dir/C_Primer_Plus/Unit_5/Example_5_14.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
